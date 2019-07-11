@@ -1,0 +1,565 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+body,html{
+  width: 100%;
+  height: 100%;
+}
+.page-head{
+  height: 80px;
+  width: 100%;
+  font-size: 0;
+  border-bottom: 1px solid #e5e5e5;
+  .container{
+    width: 1000px;
+    margin: 0 auto;
+    height: 80px;
+    .head-logo{
+      float: left;
+      margin-top: 26px;
+    }
+    .head-nav{
+      height: 80px;
+      margin-left: 40px;
+      display: inline-block;
+      margin-right: 10px;
+      .nav-item{
+        margin-right: 45px;
+        font-size: 18px;
+        color: #3e3e3a;
+        line-height: 80px;
+        text-decoration: none;
+        position: relative;
+        &.active{
+          color: #4f6fda;
+          &:after{
+            position: absolute;
+            content: '';
+            display: block;
+            width: 100%;
+            height: 7px;
+            background: #4f6fda;
+            bottom: -29px;
+            left: 0px;
+          }
+        }
+      }
+    }
+    .head-input{
+      width: 200px;
+      height: 40px;
+      margin-top: 22px;
+      vertical-align: top;
+      display: inline-block;
+      border: 1px solid #d8d8d8;
+      .search-input{
+        border: none;
+        display: inline-block;
+        width: 158px;
+        height: 38px;
+        vertical-align: top;
+        padding-left: 15px;
+        color: #d9d9d9;
+        outline: none;
+      }
+      .search-icon{
+        width: 40px;
+        height: 38px;
+        display: inline-block;
+        background: #fcfcfc;
+        img{
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+    .head-other{
+      float: right;
+      margin-top: 22px;
+      .other-item{
+        text-decoration: none;
+        font-size: 18px;
+        margin-right: 10px;
+        display: inline-block;
+        width: 80px;
+        height: 40px;
+        border-radius: 20px;
+        line-height: 40px;
+        text-align: center;
+      }
+      .login{
+        background: #fff;
+        color: #4f6fda;
+        border: 1px solid #4f6fda;
+      }
+      .register{
+        color: #fff;
+        background: #4f6fda;
+        margin-right: 0px;
+      }
+    }
+  }
+}
+.page-mainer{
+  .banner-section{
+    position: relative;
+    width: 1920px;
+    height: 520px;
+    .banner-button{
+      position: absolute;
+      text-align: center;
+      left: 892px;
+      bottom: 32px;
+      .button-item{
+        display: inline-block;
+        margin-right: 20px;
+        width: 13px;
+        height: 13px;
+        background: #7f92e2;
+        border-radius: 50%;
+        &.active{
+          width: 38px;
+          border-radius: 7.5px;
+          background: #fff;
+        }
+      }
+    }
+  }
+  .person-section{
+    .container{
+      width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+      .person-title{
+        margin-top: 70px;
+        font-size: 24px;
+        color: #333333;
+        margin-bottom: 5px;
+      }
+      .person-subtitle{
+        color: #666;
+        font-size: 14px;
+        margin-bottom: 60px;
+      }
+      .person-list{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .person-item{
+          position: relative;
+          width: 580px;
+          height: 187px;
+          box-shadow: 0px 0px 2px 0px;
+          margin-bottom: 105px;
+          border-radius: 15px;
+          &:hover{
+            background:linear-gradient(24deg,rgba(89,121,225,1),rgba(58,91,202,1));
+            .person-item-text{
+              .person-item-title{
+                color: #fff;
+              }
+              .person-item-info{
+                color: #fff;
+              }
+              .person-item-desc{
+                color: #fff;
+              }
+            }
+          }
+          .person-item-photo{
+            position: absolute;
+          }
+          .p1{
+            bottom: -5px;
+            left: 26px;
+          }
+          .p2{
+            bottom: -5px;
+            left: 21px;
+          }
+          .p3{
+            bottom: -5px;
+            left: 21px;
+          }
+          .p4{
+            bottom: -8px;
+            left: 25px;
+          }
+          .person-item-text{
+            padding:36px 45px 0px 250px;
+            text-align: left;
+            .person-item-title{
+              font-size: 25px;
+              color: #333;
+              margin-bottom: 5px;
+            } 
+            .person-item-info{
+              color: #666;
+              font-size: 14px;
+              margin-bottom: 5px;
+            } 
+            .person-item-desc{
+              font-size: 12px;
+              color: #999;
+              line-height: 22px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .learn-section{
+    padding-top: 40px;
+    background: #f0f3f5;
+    font-size: 0;
+    padding-bottom: 85px;
+    .container{
+      width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+      .learn-lesson{
+        .lesson-title{
+          font-size: 24px;
+          letter-spacing: 5px;
+          color: #333;
+          background: url(../images/curriculum.png);
+          background-repeat: no-repeat;
+          background-position: center -9px;
+          background-size: cover;
+          width: 242px;
+          height: 46px;
+          margin: 0 auto;
+          display: block;
+          line-height: 70px;
+        }
+        .lesson-subtitle{
+          margin-top: 10px;
+          font-size: 14px;
+          color: #666;
+          margin-bottom: 38px;
+        }
+        .lesson-list{
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          margin-bottom: 40px;
+          .lesson-item{
+            width: 235px;
+            height: 290px;
+            position: relative;
+            margin-bottom: 45px;
+            background: #fff;
+            transition: all ease .2s;
+            &:hover{
+              transform:translateY(-20px);
+            }
+            .lesson-item-photo{
+              width: 235px;
+              height: 150px;
+              margin-bottom: 13px;
+              .lesson-item-img{
+                width: 235px;
+                height: 150px;
+              }
+            }
+            .lesson-item-text{
+              padding-left: 12px;
+              text-align: left;
+              width: 235px;
+              .lesson-item-title{
+                font-size: 15px;
+                color: #466de2;
+                margin-bottom: 7px;
+                line-height: 15px;
+              }
+              .lesson-item-desc{
+                font-size: 12px;
+                color: #999;
+                margin-bottom: 17px;
+                line-height: 12px;
+              }
+              .level{
+                  font-size: 12px;
+                  color: #999;
+                  line-height: 12px;
+              }
+              .lesson-item-info{
+                position: relative;
+                margin-top: 27px;
+                .price{
+                  font-size: 15px;
+                  color: #f53316;
+                  font-weight: 600;
+                }    
+                .star{
+                  position: absolute;
+                  bottom: 2px;
+                  right: 14px;
+                }
+              }
+            }
+            .newlesson-tag{
+              display: block;
+              position: absolute;
+              top: -10px;
+              right: 13px;
+              width: 80px;
+              height: 88px;
+              background: url(../images/newlesson.png);
+              background-size: cover;
+            }
+            .lesson-item-tag{
+                position: absolute;
+                display: block;
+                top: 110px;
+                right: 10px;
+                padding: 0px 22px;
+                height: 30px;
+                font-size: 15px;
+                color: #fff;
+                background: #000;
+                border: 1px solid rgba(255,255,255,1);
+                border-radius: 15px;
+                line-height: 30px;
+                z-index: 99;
+              }
+          }
+          .lesson-item:nth-child(5){
+            margin-bottom: 0px;
+          }
+          .lesson-item:nth-child(6){
+            margin-bottom: 0px;
+          }
+          .lesson-item:nth-child(7){
+            margin-bottom: 0px;
+          }
+          .lesson-item:nth-child(8){
+            margin-bottom: 0px;
+          }
+        }
+      }
+      .learn-route{
+        .route-title{
+          font-size: 24px;
+          letter-spacing: 5px;
+          display: block;
+          width: 316px;
+          height: 42px;
+          margin: 0 auto;
+          background: url(../images/LearningPath.png);
+          background-size: cover;
+          background-position: center -12px;
+          line-height: 65px;
+        }
+        .route-subtitle{
+          margin-top: 7px;
+          font-size: 14px;
+          line-height: 15px;
+          color: #666;
+          margin-bottom: 52px;
+        }
+        .route-list{
+          display: flex;
+          justify-content: space-between;
+          .route-item{
+            width: 235px;
+            height: 290px;
+            position: relative;
+            margin-bottom: 45px;
+            background: #fff;
+            .route-item-photo{
+              width: 235px;
+              height: 150px;
+              .route-item-img{
+                width: 235px;
+                height: 150px;
+              }
+            }
+            .route-item-text{
+              padding: 13px 15px;
+              text-align: left;
+              .route-item-title{
+                font-size: 15px;
+                line-height: 15px;
+                color: #333;
+                margin-bottom: 6px;
+              }
+              .route-item-desc{
+                font-size: 12px;
+                color: #999;
+                line-height: 12px;
+                margin-bottom: 18px;
+              }
+              .level{
+                font-size: 12px;
+                line-height: 12px;
+                color: #9aabb8;
+              }
+              .route-item-info{
+                position: relative;
+                margin-top: 27px;
+                .price{
+                  font-size: 15px;
+                  color: #f53316;
+                  margin-right: 33px;
+                  font-weight: 600;
+                }      
+                .star{
+                  position: absolute;
+                  bottom: 2px;
+                  right: 14px;
+                }
+              }
+            }
+            .route-item-tag{
+              font-size: 15px;
+              color: #fff;
+              padding: 0 26px;
+              line-height: 30px;
+              background: #000;
+              border: 1px solid rgba(255,255,255,1);
+              position: absolute;
+              top: 110px;
+              right: 10px;
+              border-radius: 15px;
+            }
+          }
+        }
+      }
+      .learn-project{
+        background: url(../images/challenge.png);
+        background-size: cover;
+        padding-top: 160px;
+        padding-bottom: 40px;
+        position: relative;
+        .project-list{
+          display: flex;
+          justify-content: space-around;
+          padding: 0 95px;
+          .project-item{
+            width: 260px;
+            height: 180px;
+            background: linear-gradient(180deg,rgba(255,255,255,1),rgba(218,248,254,1));
+            position: relative;
+            &:hover{
+              background:linear-gradient(180deg,rgba(255,255,255,1),rgba(209,207,227,1));
+            }
+            .project-item-logo{
+              width: 42px;
+              height: 57px;
+              position: absolute;
+              top: 31px;
+              left: 30px;
+            }
+            .project-item-desc{
+              font-size: 20px;
+              color: #34495e;
+              line-height: 27px;
+              text-align: center;
+              padding-left: 90px;
+              padding-top: 35px;
+              padding-right: 27px;
+              margin-bottom: 30px;
+            }
+            .join{
+              margin: 0 auto;
+              text-decoration: none;
+              color: #fff;
+              font-size: 16px;
+              line-height: 40px;
+              width: 180px;
+              height: 40px;
+              display: block;
+              background: linear-gradient(66deg,rgba(89,120,225,1),rgba(60,92,203,1));
+              border-radius: 20px;
+            }
+          }
+        }
+        .left-button{
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          display: block;
+          background: url(../images/left.png);
+          bottom: 105px;
+          left: 20px;
+        }
+        .right-button{
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          display: block;
+          background: url(../images/right.png);
+          bottom: 105px;
+          right: 20px;
+        }
+      }
+    }
+  }
+}
+.page-foot{
+  background: #2d2d2d;
+  padding-top: 45px;
+  font-size: 0;
+  padding-bottom: 30px;
+  .container{
+    width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+    .foot-contact{
+      display: flex;
+      justify-content: space-between;
+      padding: 0 380px 50px;
+      .contact-item{
+        width: 50px;
+        height: 55px;
+        text-align: center;
+        .contact-item-logo{
+          margin-bottom: 12px;
+          height: 29px;
+        }
+        .contact-item-link{
+          font-size: 12px;
+          color: #a0a0a0;
+          line-height: 12px;
+          text-decoration: none;
+        }
+      }
+    }
+    .foot-text{
+      border-top: 2px solid #333333;
+      padding-top: 28px;
+      .foot-info{
+        margin-bottom: 15px;
+        .info-item{
+          display: inline-block;
+          margin-right: 105px;
+          font-size: 12px;
+          line-height: 12px;
+          color: #7f7f7f;
+          position: relative;
+          &:after{
+            position:absolute;
+            content: '';
+            width: 1px;
+            height: 12px;
+            background: #7f7f7f;
+            top: 3px;
+            right: -52px;
+          }
+        }
+        .info-item:last-child:after{
+          display: none;
+        }
+      }
+      .foot-remark{
+        font-size: 12px;
+        line-height: 12px;
+        color: #7f7f7f;
+      }
+    }
+  }
+}
